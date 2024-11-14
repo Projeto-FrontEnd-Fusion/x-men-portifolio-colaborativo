@@ -1,7 +1,7 @@
-| Nome                      | GitHub                                  | LinkedIn                                    | Fase         | Função                   | Observações         | Projeto                   |
-|---------------------------|-----------------------------------------|---------------------------------------------|--------------|--------------------------|---------------------|---------------------------|
-| Alexandre                 | [GitHub](https://github.com/alexhntpxt) | [LinkedIn](https://www.LinkedIn.com/in/alexhntpxt) | ⭐Code Wizard | 📈 Project Owner         | 🧬 X-Men           | Portofolio Colaborativo    |
-| Efraim Kalebe Ferreira Rocha | [GitHub](https://github.com/EfraimKalebe) | [LinkedIn](https://LinkedIn.com/in/EfraimKalebe) | ⭐Code Wizard | 🧑‍💻 Desenvolvedor Backend | ❌ Nenhuma         | Ainda não estou           |
-| Lucas Oliveira            | [GitHub](https://github.com/lucasoliveirabr) | [LinkedIn](https://www.linkedin.com/in/lucas-oliveira-br/) | ⭐Code Wizard | 🌐 Desenvolvedor Fullstack | 🦇 Liga da Justiça |                           |
-| Alex Soares de Oliveira   | [GitHub](https://github.com/Lostleleco) | [LinkedIn](https://www.linkedin.com/in/alex-soares-de-oliveira-669885308) | ⭐Code Wizard | 💻 Desenvolvedor Frontend  | 🚀 Guardiões da Galáxia | Não sei                  |
-| Reuel Silva dos Santos    | [GitHub](https://github.com/reuelsilva) | [LinkedIn](https://www.linkedin.com/in/reuelsilva) | ⭐Code Wizard | 💻 Desenvolvedor Frontend  | x-mans             |                           |
+| Nome                      | GitHub                                  | LinkedIn                                    | Fase         | Função                   |
+|---------------------------|-----------------------------------------|---------------------------------------------|--------------|--------------------------|
+| Alexandre                 | [GitHub](https://github.com/alexhntpxt) | [LinkedIn](https://www.LinkedIn.com/in/alexhntpxt) | ⭐Code Wizard | 📈 Project Owner         |
+| Efraim Kalebe Ferreira Rocha | [GitHub](https://github.com/EfraimKalebe) | [LinkedIn](https://LinkedIn.com/in/EfraimKalebe) | ⭐Code Wizard | 🧑‍💻 Desenvolvedor Backend |
+| Lucas Oliveira            | [GitHub](https://github.com/lucasoliveirabr) | [LinkedIn](https://www.linkedin.com/in/lucas-oliveira-br/) | ⭐Code Wizard | 🌐 Desenvolvedor Fullstack |
+| Alex Soares de Oliveira   | [GitHub](https://github.com/Lostleleco) | [LinkedIn](https://www.linkedin.com/in/alex-soares-de-oliveira-669885308) | ⭐Code Wizard | 💻 Desenvolvedor Frontend  |
+| Reuel Silva dos Santos    | [GitHub](https://github.com/reuelsilva) | [LinkedIn](https://www.linkedin.com/in/reuelsilva) | ⭐Code Wizard | 💻 Desenvolvedor Frontend  |
