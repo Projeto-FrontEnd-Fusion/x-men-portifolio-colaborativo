@@ -7,7 +7,7 @@ const Aside = () => {
             <h2 className="w-[459px] h-[60px] top-[199px] font-roboto font-bold text-[#ffffff] text-[32px] leading-[24px] ml-[0px] p-12 text-center">
                 Torne-se um Fusioner.
             </h2>
-            <p className="w-[589px] text-[#ffffff] text-[18px] font-roboto leading-none mt-[50px]  ml-[20px]  font-bold">
+            <p className="w-[589px] text-[#ffffff] text-[18px] font-roboto leading-none mt-[50px]  ml-[60px]  font-bold">
                 Venha fazer parte desta envolvente jornada. Vamos juntos!
             </p>
             <div className="w-[400px] text-[#ffffff]  font-roboto leading-[29px] mt-[122px]  ml-[0px]  font-bold">
