@@ -1,12 +1,13 @@
 import "./App.css";
-import Aside from "./components/Aside/aside";
-import NavBar from "./components/NavBar/navbar";
+
+import Hero from "./components/Hero/hero";
+
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <Aside />
+      <Hero />
+      
     </div>
   );
 }
