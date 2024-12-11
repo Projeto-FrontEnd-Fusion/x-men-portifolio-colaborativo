@@ -1,5 +1,6 @@
 import "../../App.css";
 import Logo from "../../assets/logo.png";
+import Subtitle from '../../assets/subtitle.png'
 
 const Hero = () => {
     return (
@@ -15,39 +16,21 @@ const Hero = () => {
                     </button>
                 </div>
             </nav>
-
-            <div className="bg-[#011628] w-full h-[100vh] relative">
-
-                <aside
-                    className="absolute top-0 left-0 w-full h-[0px] border-[1px] border-solid border-[#28EEED]"
-                ></aside>
-                <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center">
-                    <div className="text-white text-5xl font-bold">
-                        <p>Conteúdo Central</p>
+            <div className="bg-[#011628] w-full h-[88vh] relative  ">
+                <div className=" absolute top-0 bottom-0 left-0 right-0 flex items-center w-[534px] h-[245.94px] ml-[331px] pt-[280px] font-['Roboto']">
+                    <div className="text-white text-5xl font-bold ml-[60px] font-['Roboto'] ">
+                        <p>Sua jornada pelo desenvolvimento web começa aqui.</p>
+                        <div className="pt-[121.97px] flex items-center   ">
+                            <div>
+                            <button className="w-[240px] h-[60px] justify-center text-[20px] leading-[32px] font-semibold bg-[#28EEED] rounded-[8px] text-[#022440] font-['Roboto']">
+                                Faça Parte
+                            </button>
+                            </div>
+                            
+                            <img src={Subtitle} alt="Subtitle" className=" leading-[32px] ml-[372px] h-auto" />
+                        </div>
                     </div>
                 </div>
-
-
-                <aside
-                    className="absolute top-0 left-0 border-[1px] border-solid border-[#28EEED] h-full w-[300px]"
-                    style={{
-                        background: `
-                            radial-gradient(40.64% 40.64% at 50% 0%, rgba(40, 238, 237, 0.25) 0%, rgba(0, 0, 0, 0) 100%) 
-                            no-repeat top center / 700px 700px
-                        `,
-                    }}
-                ></aside>
-
-                <aside
-                    className="absolute top-0 left-0 border-[1px] border-solid border-[#28EEED] h-full w-[300px]"
-                ></aside>
-
-                <aside
-                    className="absolute top-0 right-0 border-[1px] border-solid border-[#28EEED] h-full w-[300px]"
-                ></aside>
-
-                <footer className="absolute bottom-0 w-full border-[1px] border-solid border-[#28EEED] h-[200px] z-0">
-                </footer>
             </div >
         </>
     );
