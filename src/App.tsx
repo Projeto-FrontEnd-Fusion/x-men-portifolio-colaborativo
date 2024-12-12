@@ -1,15 +1,13 @@
-import "./App.css";
-
-import Hero from "./components/Hero/hero";
 
 
-function App() {
+import LandingPage from "./pages/LandingPage";
+
+export default function App() {
   return (
-    <div>
-      <Hero />
-      
-    </div>
-  );
-}
+    <>
 
-export default App;
+      <LandingPage />
+
+    </>
+  )
+}
