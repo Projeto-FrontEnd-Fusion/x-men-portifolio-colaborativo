@@ -1,14 +1,7 @@
-import "./App.css";
-import Aside from "./components/Aside/aside";
-import NavBar from "./components/NavBar/navbar";
+import LandingPage from "./pages/LandingPage";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <NavBar />
-      <Aside />
-    </div>
-  );
+    <LandingPage />
+  )
 }
-
-export default App;
