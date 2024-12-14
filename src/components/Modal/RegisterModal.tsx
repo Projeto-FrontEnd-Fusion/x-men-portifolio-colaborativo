@@ -1,7 +1,7 @@
 // Modal.tsx
-import "../index.css";
-import trash from "./assets/lixo.png";
-import Logo from "./assets/Logo.png";
+import "../../../index.css";
+import trash from "../../assets/lixo.png";
+import Logo from "../../assets/Logo.png";
 
 const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void }) => {
   if (!isOpen) return null;

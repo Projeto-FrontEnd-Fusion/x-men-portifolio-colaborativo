@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}", // Inclui todos os arquivos dentro de subdiretórios
   ],
   theme: {
+
     extend: {},
   },
   plugins: [],
