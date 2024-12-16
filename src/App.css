@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 /* Estilos personalizados podem ser adicionados abaixo */
+#aboutSection {
+  @apply bg-[#022440] py-6 px-4 grid md:grid-cols-6 lg:grid-cols-12 gap-5 md:gap-6 lg:gap-14 justify-items-center text-[#eeeeee] max-w-[1728px]
+}
+#aboutSection .badge {
+  @apply text-xs text-center md:text-sm rounded-3xl w-full py-2 px-4 bg-[#394C67] text-[#FED674EE] border border-[#FED674EE];
+}
+@media (min-width: 1024px) {
+  #aboutSection .badge {
+    @apply text-[#28EEEDEE] border-[#28EEEDEE];
+  }
+}
+
 
 
 body {

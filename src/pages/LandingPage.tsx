@@ -1,4 +1,4 @@
-import { AboutSection } from "../components/AboutSection/AboutSection";
+import { AboutSection } from "../components/AboutSection";
 
 export default function LandingPage() {
   return (
