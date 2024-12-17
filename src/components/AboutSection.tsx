@@ -27,6 +27,57 @@ export function AboutSection() {
     return () => window.removeEventListener("resize", handleResize); // Cleanup
   }, []);
 
+  const badges = ["tecnologia", "inovação", "interação"];
+  const stats = [
+    {
+      title: "+ 8 meses",
+      imgSrc: isLargeScreen ? lightningIcon : trophyIcon,
+      text: "Levando aprendizado aos entusiastas de tecnologia e juniores"
+    },
+    {
+      title: "+ 50 colaboradores",
+      imgSrc: isLargeScreen ? lightningIcon : trophyIcon,
+      text: "Equipes compostas por desenvolvedores e designers trabalhando com garra"
+    },
+    {
+      title: "+ 100 projetos",
+      imgSrc: isLargeScreen ? lightningIcon : trophyIcon,
+      text: "Sempre trabalhando de forma conjunta, para levar o melhor resultado possível"
+    }
+  ];
+  const cards = [
+    {
+      imgSrc: isLargeScreen ? console : consoleMobile,
+      imgAlt: "Console image",
+      widthMobile: "138.97px",
+      heightMobile: "138.97px",
+      lg_width: "130px",
+      lg_height: "95px",
+      borderColor: "#28EEED",
+      text: "Desafios e atividades interativas que incentivam o aprendizado prático"
+    },
+    {
+      imgSrc: isLargeScreen ? trophy : trophyMobile,
+      imgAlt: "Trophy image",
+      widthMobile: "110.5px",
+      heightMobile: "136.19px",
+      lg_width: "130px",
+      lg_height: "95px",
+      borderColor: "#FED674",
+      text: "Conquistas a cada desafio cumprido e feedback construtivo para cada participante"
+    },
+    {
+      imgSrc: isLargeScreen ? lightning : lightningMobile,
+      imgAlt: "Lightning image",
+      widthMobile: "125.3px",
+      heightMobile: "127.61px",
+      lg_width: "125px",
+      lg_height: "127px",
+      borderColor: "#96B33C",
+      text: "Suba de nível e entre em sua própria equipe. Se torne um Fusioner de respeito"
+    }
+  ]
+
   return (
     <section id="aboutSection">
       <div className='grid md:col-span-6 lg:col-span-12 md:grid-cols-6 lg:grid-cols-12 gap-5 md:gap-6 lg:gap-8 max-w-[1076.8px]'>
@@ -38,9 +89,11 @@ export function AboutSection() {
           </div>
 
           <div className="grid grid-cols-3 gap-2 sm:gap-5 place-items-start lg:gap-8">
-            <p className="badge">TECNOLOGIA</p>
-            <p className="badge">INOVAÇÃO</p>
-            <p className="badge">INTERAÇÃO</p>
+            {badges.length > 0 && (
+              badges.map((badge) => (
+                <p className="badge uppercase" key={badge}>{badge}</p>
+              ))
+            )}
           </div>
         </div>
 
@@ -52,48 +105,31 @@ export function AboutSection() {
       <div className="hidden lg:grid lg:col-span-12 bg-cover bg-center opacity-50 h-[240px] w-[1146px]" style={{ backgroundImage: `url(${montain})` }}></div>
 
       <div className="grid md:col-span-6 lg:col-span-12 md:grid-cols-6 lg:grid-cols-12 gap-6 lg:gap-12 xl:w-[1239px]">
-        <div className="flex flex-col gap-2 rounded-xl md:col-span-2 lg:col-span-4 lg:bg-[#2B3A4F] lg:py-[18px] lg:px-5">
-          <div className="md:flex md:gap-2">
-            <span><img src={isLargeScreen ? lightningIcon : trophyIcon} alt="Trophy Icon" className="w-[27.5px] h-[27.5px] lg:w-[35px] lg:h-[50px]" /></span>
-            <p className="text-3xl font-medium">+ 8 meses</p>
-          </div>
-          <p className="text-sm">Levando aprendizado aos entusiastas de tecnologia e juniores</p>
-        </div>
-
-        <div className="flex flex-col gap-2 rounded-xl md:col-span-2 lg:col-span-4 lg:bg-[#2B3A4F] lg:py-[18px] lg:px-5">
-          <div className="md:flex md:gap-2">
-            <span><img src={isLargeScreen ? lightningIcon : trophyIcon} alt="Trophy Icon" className="w-[27.5px] h-[27.5px] lg:w-[35px] lg:h-[50px]" /></span>
-            <p className="text-3xl font-medium">+ 50 colaboradores</p>
-          </div>
-          <p className="text-sm">Equipes compostas por desenvolvedores e designers trabalhando com garra</p>
-        </div>
-        <div className="flex flex-col gap-2 rounded-xl md:col-span-2 lg:col-span-4 lg:bg-[#2B3A4F] lg:py-[18px] lg:px-5">
-          <div className="md:flex md:gap-2">
-            <span><img src={isLargeScreen ? lightningIcon : trophyIcon} alt="Trophy Icon" className="w-[27.5px] h-[27.5px] lg:w-[35px] lg:h-[50px]" /></span>
-            <p className="text-3xl font-medium">+ 100 projetos</p>
-          </div>
-          <p className="text-sm">Sempre trabalhando de forma conjunta, para levar o melhor resultado possível</p>
-        </div>
+        {stats.length > 0 && (
+          stats.map((stat) => (
+            <div key={stat.title} className="flex flex-col gap-2 rounded-xl md:col-span-2 lg:col-span-4 lg:bg-[#2B3A4F] lg:py-[18px] lg:px-5">
+              <div className="md:flex md:gap-2">
+                <span><img src={stat.imgSrc} alt="Trophy Icon" className="w-[27.5px] h-[27.5px] lg:w-[35px] lg:h-[50px]" /></span>
+                <p className="text-3xl font-medium">{stat.title}</p>
+              </div>
+              <p className="text-sm">{stat.text}</p>
+            </div>
+          ))
+        )}
       </div>
 
       <div className="grid justify-items-center my-10 md:col-span-6 lg:col-span-12 gap-6 lg:gap-12 max-w-[1146px] lg:mb-[216px]">
         <h2 className="text-2xl md:text-center lg:text-5xl font-medium md:max-w-[350px] lg:max-w-[600px]">Transformamos o aprender numa experiência única.</h2>
 
         <div className="flex gap-6 lg:gap-12 text-center max-w-full overflow-x-auto">
-          <div className="flex flex-col flex-shrink-0 items-center justify-center gap-2 border border-[#28EEED] rounded-3xl p-1.5 lg:px-5 lg:py-8 w-[297px] max-h-[205px]">
-            <img src={isLargeScreen ? console : consoleMobile} alt="Console image" className="w-[138.97px] h-[138.97px] lg:w-[130px] lg:h-[95px]" />
-            <p className="text-sm min-w-[236px]">Desafios e atividades interativas que incentivam o aprendizado prático</p>
-          </div>
-
-          <div className="flex flex-col flex-shrink-0 items-center justify-center gap-2 border border-[#FED674] rounded-3xl p-1.5 lg:px-5 lg:py-8 w-[297px] max-h-[205px]">
-            <img src={isLargeScreen ? trophy : trophyMobile} alt="Trophy image" className="w-[110.5px] h-[136.19pxs] lg:w-[130px] lg:h-[95px]" />
-            <p className="text-sm min-w-[236px]">Conquistas a cada desafio cumprido e feedback construtivo para cada participante</p>
-          </div>
-
-          <div className="flex flex-col flex-shrink-0 items-center justify-center gap-2 border border-[#96B33C] rounded-3xl p-1.5 lg:px-5 lg:py-8 w-[297px] max-h-[205px]">
-            <img src={isLargeScreen ? lightning : lightningMobile} alt="Lightning image" className="w-[125.3px] h-[127.61px] lg:w-[125px] lg:h-[127px]" />
-            <p className="text-sm min-w-[236px]">Suba de nível e entre em sua própria equipe. Se torne um Fusioner de respeito</p>
-          </div>
+          {cards.length > 0 && (
+            cards.map((card) => (
+              <div key={card.imgAlt} className="flex flex-col flex-shrink-0 items-center justify-center gap-2 border rounded-3xl p-1.5 lg:px-5 lg:py-8 w-[297px] max-h-[205px]" style={{ borderColor: card.borderColor }}>
+                <img src={card.imgSrc} alt={card.imgAlt} style={{ width: isLargeScreen ? card.lg_width : card.widthMobile, height: isLargeScreen ? card.lg_height : card.heightMobile }} />
+                <p className="text-sm min-w-[236px]">{card.text}</p>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </section>
