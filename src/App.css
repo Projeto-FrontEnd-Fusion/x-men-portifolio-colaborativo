@@ -9,6 +9,12 @@
 #aboutSection .badge {
   @apply text-xs text-center md:text-sm rounded-3xl w-full py-2 px-4 bg-[#394C67] text-[#FED674EE] border border-[#FED674EE];
 }
+#aboutSection .stat {
+  @apply flex flex-col gap-2 rounded-xl md:col-span-2 lg:col-span-4 lg:bg-[#2B3A4F] lg:py-[18px] lg:px-5;
+}
+#aboutSection .card {
+  @apply flex flex-col flex-shrink-0 items-center justify-center gap-2 border rounded-3xl p-1.5 lg:px-5 lg:py-8 w-[297px] max-h-[205px];
+}
 @media (min-width: 1024px) {
   #aboutSection .badge {
     @apply text-[#28EEEDEE] border-[#28EEEDEE];

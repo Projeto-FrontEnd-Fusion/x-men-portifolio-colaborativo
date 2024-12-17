@@ -107,7 +107,7 @@ export function AboutSection() {
       <div className="grid md:col-span-6 lg:col-span-12 md:grid-cols-6 lg:grid-cols-12 gap-6 lg:gap-12 xl:w-[1239px]">
         {stats.length > 0 && (
           stats.map((stat) => (
-            <div key={stat.title} className="flex flex-col gap-2 rounded-xl md:col-span-2 lg:col-span-4 lg:bg-[#2B3A4F] lg:py-[18px] lg:px-5">
+            <div key={stat.title} className="stat">
               <div className="md:flex md:gap-2">
                 <span><img src={stat.imgSrc} alt="Trophy Icon" className="w-[27.5px] h-[27.5px] lg:w-[35px] lg:h-[50px]" /></span>
                 <p className="text-3xl font-medium">{stat.title}</p>
@@ -124,7 +124,7 @@ export function AboutSection() {
         <div className="flex gap-6 lg:gap-12 text-center max-w-full overflow-x-auto">
           {cards.length > 0 && (
             cards.map((card) => (
-              <div key={card.imgAlt} className="flex flex-col flex-shrink-0 items-center justify-center gap-2 border rounded-3xl p-1.5 lg:px-5 lg:py-8 w-[297px] max-h-[205px]" style={{ borderColor: card.borderColor }}>
+              <div key={card.imgAlt} className="card" style={{ borderColor: card.borderColor }}>
                 <img src={card.imgSrc} alt={card.imgAlt} style={{ width: isLargeScreen ? card.lg_width : card.widthMobile, height: isLargeScreen ? card.lg_height : card.heightMobile }} />
                 <p className="text-sm min-w-[236px]">{card.text}</p>
               </div>
