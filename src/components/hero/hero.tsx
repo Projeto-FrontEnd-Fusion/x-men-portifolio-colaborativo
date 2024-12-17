@@ -5,7 +5,7 @@ import Logo from '../../assets/logo.png';
 import Subtitle from '../../assets/subtitle.png';
 import Tech from '../../assets/Tech.png'
 import Explorar from '../../assets/Explorar.png'
-import Modal from "../../components/modal/RegisterModal";
+import Modal from "../../components/Modal/RegisterModal";
 
 const Hero = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,10 +22,10 @@ const Hero = () => {
                         <img
                             src={Logo}
                             alt="Tech Logo"
-                            className="h-[50px] ml-4" />
+                            className="h-14 ml-4" />
                         <button
                             onClick={openModal}
-                            className="hidden lg:block w-60 h-14 bg-[#2B3A4F] rounded-lg text-[#EEEEEE] font-bold gap-4 leading-8 border border-[#EEEEEE]"
+                            className="hidden lg:block w-72 h-14 bg-[#2B3A4F] rounded-lg text-[#EEEEEE] font-bold gap-4 leading-8 border border-[#EEEEEE]"
                         >
                             Faça Parte
                         </button>
@@ -49,7 +49,7 @@ const Hero = () => {
                     <section className="flex flex-col lg:flex-row items-center lg:justify-between w-auto space-y-8 lg:space-y-8 lg:space-x-96">
                         <button
                             onClick={openModal}
-                            className="w-60 h-14 bg-[#2B3A4F] rounded-lg text-[#EEEEEE] font-bold leading-8 border border-[#EEEEEE]"
+                            className="w-60 h-14 bg-[#28eeed] rounded-lg text-[#022440]  font-bold leading-8 border border-[#EEEEEE]"
                         >
                             Faça Parte
                         </button>
@@ -79,16 +79,18 @@ const Hero = () => {
 
 
                     <footer className="flex justify-items-start w-auto">
-                        <img
-                            src={Explorar}
-                            alt="Botão explorar"
-                            style={{
-                                width: "auto",
-                                height: "32px",
-                                textUnderlinePosition: "from-font",
-                                textDecorationSkipInk: "none",
-                            }}
-                        />
+                        <button>
+                            <img
+                                src={Explorar}
+                                alt="Botão explorar"
+                                style={{
+                                    width: "auto",
+                                    height: "32px",
+                                    textUnderlinePosition: "from-font",
+                                    textDecorationSkipInk: "none",
+                                }}
+                            />
+                        </button>
 
                     </footer>
                 </div>
