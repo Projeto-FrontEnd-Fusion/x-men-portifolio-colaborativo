@@ -46,7 +46,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
     }, 3000);
   };
 
-  
+
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
@@ -179,7 +179,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
                 {errors.skills && <p className="text-red-500 text-sm">{errors.skills.message}</p>}
               </div>
 
-              <div className="text-center w-full">
+              <div className="mb-4 flex justify-center">
                 {isSubmitted ? (
                   <p className="text-green-500 text-xl">Mensagem enviada com sucesso!</p>
                 ) : (
