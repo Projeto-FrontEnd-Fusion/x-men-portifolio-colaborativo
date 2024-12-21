@@ -26,7 +26,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
   ];
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { register, handleSubmit, formState: { errors }, reset, watch } = useForm({
+  const { register, handleSubmit, formState: { errors }, reset } = useForm({
     resolver: yupResolver(schema),
     defaultValues: {
       role: [], // Garantir que "role" seja sempre um array
@@ -46,8 +46,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
     }, 3000);
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const roles = watch("role"); // Para ver os valores selecionados dos checkboxes
+  
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
@@ -184,7 +183,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
                 {isSubmitted ? (
                   <p className="text-green-500 text-xl">Mensagem enviada com sucesso!</p>
                 ) : (
-                  <SecondaryButton type="submit">Faça parte</SecondaryButton>
+                  <SecondaryButton onClick={handleSubmit(onSubmit)} type="submit">Faça parte</SecondaryButton>
                 )}
               </div>
             </form>
