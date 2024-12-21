@@ -1,11 +1,14 @@
 // LandingPage.tsx
 import { useState } from "react";
 import '../../../index.css';
-import Logo from '../../assets/logo.png';
-import Subtitle from '../../assets/subtitle.png';
-import Tech from '../../assets/Tech.png'
-import Explorar from '../../assets/Explorar.png'
+import Logo from '../../../assets/logo.png';
+
+import Subtitle from '../../../assets/subtitle.png'
+import Tech from '../../../assets/Tech.png'
+import Explorar from '../../../assets/Explorar.png'
 import Modal from "../../components/modal/RegisterModal";
+import ButtonPrimary from "../buttons/buttonPrimary";
+import SecondaryButton from "../buttons/secondaryButton";
 
 const Hero = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,24 +19,22 @@ const Hero = () => {
     return (
 
         <>
-            <header className="flex w-full">
-                <div className="flex lg:justify-center py-4 w-full bg-[#2B3A4F]">
+            <header className="flex w-full ">
+                <div className="flex lg:justify-center py-8 w-full bg-[#2B3A4F]">
                     <div className="flex justify-around items-center lg:w-4/5">
                         <img
                             src={Logo}
                             alt="Tech Logo"
-                            className="h-14 ml-4" />
-                        <button
-                            onClick={openModal}
-                            className="hidden lg:block w-72 h-14 bg-[#2B3A4F] rounded-lg text-[#EEEEEE] font-bold gap-4 leading-8 border border-[#EEEEEE]"
-                        >
+                            className="h-16 ml-4" />
+                        <ButtonPrimary onClick={openModal}>
                             Faça Parte
-                        </button>
+                        </ButtonPrimary>
                     </div>
                 </div>
             </header>
             <main className="flex w-full">
                 <div className="flex flex-col items-start justify-center px-8 sm:px-16 lg:px-96 py-20 space-y-16">
+                    <div className="absolute top-0 -left-16 w-1/3 h-1/3 bg-[radial-gradient(40.64%_40.64%_at_50.08%_52.49%,_rgba(40,_238,_237,_0.25)_0%,_rgba(0,_0,_0,_0)_100%)] blur-lg pointer-events-none"></div>
 
                     <h1
                         className="text-[#EEEEEE] text-3xl sm:text-5xl font-semibold leading-tight text-left max-w-2xl lg: py-20 px-2 space-y-16 "
@@ -47,12 +48,9 @@ const Hero = () => {
 
 
                     <section className="flex flex-col lg:flex-row items-center lg:justify-between w-auto space-y-8 lg:space-y-8 lg:space-x-96">
-                        <button
-                            onClick={openModal}
-                            className="w-60 h-14 bg-[#28eeed] rounded-lg text-[#022440]  font-bold leading-8 border border-[#EEEEEE]"
-                        >
+                        <SecondaryButton onClick={openModal}>
                             Faça Parte
-                        </button>
+                        </SecondaryButton>
                         <img
                             src={Subtitle}
                             alt="Logotipo"
@@ -66,6 +64,7 @@ const Hero = () => {
                                 textDecorationSkipInk: "none",
                             }}
                         />
+
                     </section>
 
 
