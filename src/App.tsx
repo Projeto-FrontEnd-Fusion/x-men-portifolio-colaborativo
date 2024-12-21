@@ -1,14 +1,13 @@
-import "./App.css";
-import Aside from "./components/Aside/aside";
-import NavBar from "./components/NavBar/navbar";
 
-function App() {
+
+import LandingPage from "./pages/LandingPage";
+
+export default function App() {
   return (
-    <div>
-      <NavBar />
-      <Aside />
-    </div>
-  );
-}
+    <>
 
-export default App;
+      <LandingPage />
+
+    </>
+  )
+}
