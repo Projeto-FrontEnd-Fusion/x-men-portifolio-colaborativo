@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import "../../../index.css";
 import close from "../../../assets/close.png";
 import Logo from "../../../assets/logo.png";
@@ -34,6 +35,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
 
   const [isSubmitted, setIsSubmitted] = React.useState(false);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = (data: any) => {
     console.log(data);
     setIsSubmitted(true);
@@ -55,7 +57,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
           </div>
         </header>
         <div className="flex flex-col lg:flex-row w-full h-auto">
-          <aside className="lg:w-1/2 w-full p-6 sm:p-8 lg:p-12 bg-[#022440] lg:mb-0">
+          <aside className="lg:w-1/2 w-full p-6 sm:p-8 lg:p-8 bg-[#022440] lg:mb-0">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">Torne-se um Fusioner</h2>
             <p className="text-sm sm:text-base mb-6">Venha fazer parte desta envolvente jornada. Vamos juntos!</p>
             <ul className="space-y-4 sm:space-y-6 mt-10 sm:mt-20">
@@ -67,8 +69,8 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
               ))}
             </ul>
           </aside>
-          <div className="lg:w-1/2 w-full p-6 sm:p-8 lg:p-12 bg-white text-[#022440]">
-            <h2 className="text-2xl sm:text-3xl text-center font-bold mb-4">Preencha os dados abaixo</h2>
+          <div className="lg:w-1/2  w-full p-6 sm:p-8 lg:p-8 bg-white text-[#022440]">
+            <h2 className=" text-2xl sm:text-3xl text-start font-bold mb-4">Preencha os dados abaixo</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-4">
                 <label htmlFor="name" className="block text-sm mb-2">
@@ -77,7 +79,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
                 <input
                   id="name"
                   type="text"
-                  className={`w-full p-3 bg-[#f9f9f9] text-[#022440] border ${errors.name ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
+                  className={`w-3/4 p-3 bg-[#f9f9f9] text-[#022440] border ${errors.name ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
                   {...register("name")}
                 />
                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
@@ -90,7 +92,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
                 <input
                   id="email"
                   type="email"
-                  className={`w-full p-3 bg-[#f9f9f9] text-[#022440] border ${errors.email ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
+                  className={`w-3/4 p-3 bg-[#f9f9f9] text-[#022440] border ${errors.email ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
                   {...register("email")}
                 />
                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
@@ -102,27 +104,30 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
                 </label>
                 <textarea
                   id="message"
-                  className={`w-full p-3 bg-[#f9f9f9] text-[#022440] border ${errors.message ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
+                  className={`w-3/4 p-3 bg-[#f9f9f9] text-[#022440] border ${errors.message ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
                   rows={3}
                   {...register("message")}
                 ></textarea>
                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
               </div>
 
-              <div className="mb-6">
+              <div className="mb-6 ">
                 <label className="block text-sm mb-2">
                   Qual cargo você irá atuar? <span className="text-red-500">*</span>
                 </label>
-                <div className="flex flex-wrap gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   {['Desenvolvedor Front-end', 'Desenvolvedor Back End', 'Desenvolvedor Full Stack', 'UX Designer'].map((role) => (
-                    <label key={role} className="flex items-center space-x-2 text-[#7188AA]">
+                    <label
+                      key={role}
+                      className="flex items-center justify-between space-x-4 w-full max-w-md text-[#7188AA]"
+                    >
                       <input
                         type="checkbox"
                         className="w-4 h-4 border-2 border-gray-300 rounded-full appearance-none checked:bg-[#7188AA] checked:border-[#7188AA] focus:outline-none"
                         {...register("role")}
                         value={role}
                       />
-                      <span className="text-sm">{role}</span>
+                      <span className="text-sm flex-1">{role}</span>
                     </label>
                   ))}
                 </div>
@@ -130,25 +135,43 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
               </div>
 
               <div className="mb-6">
-                <label htmlFor="about" className="block text-sm mb-2">
+                <label htmlFor="about" className="block text-sm mb-2 ">
                   Nos conte mais sobre você<span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="about"
-                  className={`w-full p-3 bg-[#f9f9f9] text-[#022440] border ${errors.skills ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
+                  className={`w-3/4 p-3 bg-[#f9f9f9] text-[#022440] border ${errors.skills ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
                   rows={4}
                   {...register("skills")}
                 ></textarea>
                 {errors.skills && <p className="text-red-500 text-sm mt-1">{errors.skills.message}</p>}
               </div>
 
-              <div className="flex justify-center">
+              <div className="flex ml-10">
                 {isSubmitted ? (
                   <p className="text-green-500 text-lg">Mensagem enviada com sucesso!</p>
                 ) : (
-                  <ModalButton onClick={handleSubmit(onSubmit)} type="submit">Faça parte</ModalButton>
+                  <>
+                    {/* Botão padrão para dispositivos maiores */}
+                    <ModalButton
+                      onClick={handleSubmit(onSubmit)}
+                      type="submit"
+                      className="hidden sm:block"
+                    >
+                      Faça parte
+                    </ModalButton>
+
+                    <button
+                      onClick={handleSubmit(onSubmit)}
+                      type="submit"
+                      className="block mr-4 sm:hidden w-36 h-10 bg-[#28eeed] text-[#022440] font-bold rounded-lg border border-[#EEEEEE]"
+                    >
+                      Faça Parte
+                    </button>
+                  </>
                 )}
               </div>
+
             </form>
           </div>
         </div>
