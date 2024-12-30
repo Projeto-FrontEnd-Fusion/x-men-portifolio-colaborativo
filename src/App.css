@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+#levelUpSection {
+  @apply bg-[#022440] pt-[192px] justify-items-center text-[#eeeeee] max-w-[1728px];
+}
+#levelUpSection .socials {
+  @apply flex flex-col md:flex-row w-full gap-8;
+}
+#levelUpSection .contact {
+  @apply flex flex-col w-full;
+}
 body {
   margin: 0;
   padding: 0;
