@@ -6,7 +6,8 @@ import Logo from '../../../assets/logo.png';
 import Subtitle from '../../../assets/subtitle.png'
 import Tech from '../../../assets/Tech.png'
 import Explorar from '../../../assets/Explorar.png'
-import Modal from "../../components/modal/RegisterModal";
+import Modal from "../../components/Modal/RegisterModal";
+
 import ButtonPrimary from "../buttons/buttonPrimary";
 import SecondaryButton from "../buttons/secondaryButton";
 

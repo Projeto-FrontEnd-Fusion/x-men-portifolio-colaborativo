@@ -1,12 +1,12 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'; // Importação correta e única
-import Modal from './components/modal/RegisterModal'; // Ajuste o caminho de importação se necessário
+import Modal from './components/Modal/RegisterModal'; // Ajuste o caminho de importação se necessário
 
 describe('Modal Component', () => {
 
   test('Não deve renderizar quando isOpen é falso', () => {
     render(<Modal isOpen={false} closeModal={jest.fn()} />);
     expect(screen.queryByText(/Preencha os dados abaixo/)).not.toBeInTheDocument();
-    
+
   });
 
   test('Deve renderizar o modal quando isOpen é verdadeiro', () => {
