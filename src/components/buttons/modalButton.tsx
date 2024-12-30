@@ -13,7 +13,7 @@ const ModalButton: React.FC<ModalButtonProps> = ({ onClick, children, className,
             onClick={onClick}
             type={type} // Usando a propriedade type
             className={`w-72 h-16 rounded-lg bg-[#28eeed] text-[#022440] font-bold leading-8 border border-[#EEEEEE] ${className || ""} 
-          sm:w-44 sm:h-12 md:w-72 md:h-16`} // Responsividade: menor tamanho em dispositivos móveis (sm), tamanho normal em dispositivos maiores (md)
+          sm:w-44 sm:justify-start sm:h-12 md:w-72 md:h-16`} // Responsividade: menor tamanho em dispositivos móveis (sm), tamanho normal em dispositivos maiores (md)
         >
             {children}
         </button>

@@ -55,7 +55,7 @@ const Hero = () => {
                         <img
                             src={Subtitle}
                             alt="Logotipo"
-                            className="object-contain"
+                            className="object-contain sm:w-44 sm:justify-start sm:h-12 md:w-72 md:h-16"
                             style={{
                                 fontSize: "20px",
                                 fontWeight: 400,
@@ -73,7 +73,7 @@ const Hero = () => {
                         <img
                             src={Tech}
                             alt="Tecnologias"
-                            className="h-12 sm:h-16 lg:h-20"
+                            className="h-12 sm:h-10 lg:h-20"
                         />
                     </section>
 
