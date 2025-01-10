@@ -1,17 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./index.html",            // Se você usar um arquivo HTML
-    "./src/**/*.{js,jsx,ts,tsx}", // Para escanear todos os arquivos JS/TS
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}", // Inclui todos os arquivos dentro de subdiretórios
   ],
   theme: {
     extend: {
-      boxShadow: {
-        'custom-glow': '0px 1px 4px 0px rgba(40, 238, 237, 0.4)', // sombra customizada
-      },
-      colors: {
-        'custom-cyan': '#28EEED', // Cor personalizada para consistência
+      screens: {
+        'xxl': '1920px', // Adiciona um novo breakpoint para telas de 1920px
       },
     },
   },
+  plugins: [], // Mantenha plugins fora do tema
 };
