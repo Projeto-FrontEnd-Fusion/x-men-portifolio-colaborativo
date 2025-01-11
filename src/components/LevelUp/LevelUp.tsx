@@ -12,9 +12,10 @@ export default function LevelUpSection() {
   const closeModal = () => setIsModalOpen(false);
 
   const email: string = "contato@frontendfusion.com.br";
-  const phoneNumber: string = "+55 11 9 9999-8888";
+  const phoneNumber: string = "+55 11 99999-8888";
+  const cleanPhoneNumber = phoneNumber.replace(/\D/g, '');
   const whatsappMessage: string = "Olá, gostaria de mais informações sobre o projeto.";
-  const whatsappUrl: string = `https://wa.me/5511999998888?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl: string = `https://wa.me/${cleanPhoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section id="levelUpSection" className="bg-[#022440] pt-[192px] justify-items-center text-[#eeeeee] max-w-[1728px]">
