@@ -10,7 +10,7 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ onClick, className, child
     return (
         <button
             onClick={onClick}
-            className={`hidden lg:block w-72 h-14 bg-[#2B3A4F] rounded-lg text-[#EEEEEE] font-bold gap-4 leading-8 border border-[#EEEEEE] ${className || ""}`}
+            className={`hidden lg:block w-72 h-14 bg-[#2B3A4F] hover:bg-[#022440] hover:text-white rounded-lg text-[#EEEEEE] font-bold gap-4 leading-8 border border-[#EEEEEE] ${className || ""}`}
         >
             {children}
         </button>
