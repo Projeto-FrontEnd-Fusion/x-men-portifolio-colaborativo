@@ -79,7 +79,7 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
                 <input
                   id="name"
                   type="text"
-                  className={`w-3/4 p-3 bg-[#f9f9f9] text-[#022440] border ${errors.name ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
+                  className={`w-3/4 p-2 bg-[#f9f9f9] text-[#022440] border ${errors.name ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
                   {...register("name")}
                 />
                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
@@ -92,19 +92,19 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
                 <input
                   id="email"
                   type="email"
-                  className={`w-3/4 p-3 bg-[#f9f9f9] text-[#022440] border ${errors.email ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
+                  className={`w-3/4 p-2 bg-[#f9f9f9] text-[#022440] border ${errors.email ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
                   {...register("email")}
                 />
-                {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+                {errors.email && <p className="text-red-500 text-sm mt-0">{errors.email.message}</p>}
               </div>
 
               <div className="mb-4">
-                <label htmlFor="message" className="block text-sm mb-2">
+                <label htmlFor="message" className="block text-sm mb-1">
                   Quais são suas habilidades?<span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="message"
-                  className={`w-3/4 p-3 bg-[#f9f9f9] text-[#022440] border ${errors.message ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
+                  className={`w-3/4 p-0 bg-[#f9f9f9] text-[#022440] border ${errors.message ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
                   rows={3}
                   {...register("message")}
                 ></textarea>
@@ -135,12 +135,12 @@ const Modal = ({ isOpen, closeModal }: { isOpen: boolean; closeModal: () => void
               </div>
 
               <div className="mb-6">
-                <label htmlFor="about" className="block text-sm mb-2 ">
+                <label htmlFor="about" className="block text-sm mb-1 ">
                   Nos conte mais sobre você<span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="about"
-                  className={`w-3/4 p-3 bg-[#f9f9f9] text-[#022440] border ${errors.skills ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
+                  className={`w-3/4 p-0 bg-[#f9f9f9] text-[#022440] border ${errors.skills ? 'border-red-500' : 'border-[#ddd]'} rounded-lg`}
                   rows={4}
                   {...register("skills")}
                 ></textarea>

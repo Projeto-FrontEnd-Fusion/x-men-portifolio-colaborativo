@@ -17,6 +17,7 @@ const SecondaryButton: React.FC<SecondaryButtonProps> = ({ onClick, children, cl
             md:w-72 md:h-16 w-60 h-14 
             bg-[#28eeed] rounded-lg text-[#022440] 
             font-bold leading-8 border border-[#EEEEEE]
+            hover:bg-[#022440] hover:text-white
             ${className || ""}
              bottom-1/2 mr-20 
             md:static  
