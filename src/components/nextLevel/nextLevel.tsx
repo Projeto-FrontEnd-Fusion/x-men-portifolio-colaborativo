@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { TbBrandLinkedin } from "react-icons/tb";
 import montain from "../../assets/montain.jpg";
 
