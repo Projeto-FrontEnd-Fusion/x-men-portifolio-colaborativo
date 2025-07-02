@@ -5,7 +5,7 @@ import "../../../index.css";
 
 import Tech from "../../../assets/Tech.png";
 import Explorar from "../../../assets/Explorar.png";
-import Subtitle from '../../../assets/subtitle.png'
+import Subtitle from "../../../assets/subtitle.png";
 import ButtonPrimary from "../buttons/buttonPrimary";
 import SecondaryButton from "../buttons/secondaryButton";
 import Modal from "../modal/RegisterModal";
@@ -15,7 +15,6 @@ const Hero = () => {
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-
 
   return (
     <>
