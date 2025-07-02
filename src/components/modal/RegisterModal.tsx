@@ -63,7 +63,7 @@ const Modal = ({
   };
 
   return (
-    <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center z-60">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-60">
       <div className="text-white p-6 sm:p-8 lg:p-12 w-full sm:w-4/5 lg:w-2/3 max-h-screen overflow-y-auto lg:overflow-hidden">
         <header className="bg-[#2b3a4f] py-4 sm:py-6 lg:py-8 w-full flex justify-between items-center">
           <div className="w-full max-w-[90%] mx-auto flex justify-between items-center">
