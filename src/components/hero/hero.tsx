@@ -1,21 +1,20 @@
 // LandingPage.tsx
 import { useState } from "react";
-import Logo from "../../../assets/logo.png";
 import "../../../index.css";
+import Logo from "../../../assets/logo.png";
 
+import Subtitle from "../../../assets/subtitle.png";
 import Tech from "../../../assets/Tech.png";
 import Explorar from "../../../assets/Explorar.png";
-import Subtitle from '../../../assets/subtitle.png'
+import Modal from "../../components/modal/RegisterModal";
 import ButtonPrimary from "../buttons/buttonPrimary";
 import SecondaryButton from "../buttons/secondaryButton";
-import Modal from "../modal/RegisterModal";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-
 
   return (
     <>

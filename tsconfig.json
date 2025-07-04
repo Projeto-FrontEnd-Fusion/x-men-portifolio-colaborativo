@@ -12,15 +12,15 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "@components/*": [
-        "components/*"
+      "@components/": [
+        "components/"
       ],
-      "@components/modal/*": [
-        "components/modal/*"
+      "@components/modal/": [
+        "components/modal/"
       ]
     }
   },
   "include": [
-    "src/**/*"
+    "src/*/"
   ]
 }
