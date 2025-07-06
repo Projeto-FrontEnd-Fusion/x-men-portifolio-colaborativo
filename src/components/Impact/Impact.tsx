@@ -26,26 +26,20 @@ function Impact() {
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto max-w-7xl px-4">
         {impacts.map((impact, index) => (
           <li key={index}>
-            <article className="sm:bg-[#2b3a4f] bg-transparent p-6 rounded-2xl transition duration-300 text-left sm:text-center flex flex-col items-start sm:items-center">
-              {/* Ícone troféu visível no mobile */}
+            <article className="sm:bg-[#2b3a4f] bg-transparent p-6 rounded-2xl transition duration-300 text-left  flex flex-col items-start sm:items-center">              
               <img
                 src={Trofeu}
                 className="w-6 mb-2 sm:hidden"
                 alt="Imagem de um troféu"
               />
-
-              {/* Bloco com raio + título visível apenas em telas maiores */}
               <div className="hidden sm:flex items-center justify-center gap-2 mb-4">
-                <img src={Vector} className="w-8" alt="Imagem de um raio" />
-                <h3 className="text-2xl font-bold mb-0">{impact.title}</h3>
+                <img src={Vector} className="w-9" alt="Imagem de um raio" />
+                <h3 className="text-2xl  font-bold mb-0">{impact.title}</h3>
               </div>
-
-              {/* Título no mobile */}
               <h3 className="text-3xl font-medium mb-2 block sm:hidden">
                 {impact.title}
               </h3>
-
-              <p className="text-gray-300">{impact.description}</p>
+              <p className="text-gray-300  justify-start">{impact.description}</p>
             </article>
           </li>
         ))}
