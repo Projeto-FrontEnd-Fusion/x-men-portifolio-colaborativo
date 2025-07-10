@@ -18,9 +18,15 @@ export const Community = () => {
             </h2>
           </div>
           <div className="flex w-full items-center justify-around px-8 py-8">
-            <button>TECNOLOGIA</button>
-            <button>INOVAÇÃO</button>
-            <button>INTEGRAÇÃO</button>
+            <button className="border py-1 px-2 rounded-2xl text-[#28EEEDEE] border-[#28EEEDEE] text-base">
+              TECNOLOGIA
+            </button>
+            <button className="border py-1 px-2 rounded-2xl text-[#28EEEDEE] border-[#28EEEDEE] text-base">
+              INOVAÇÃO
+            </button>
+            <button className="border py-1 px-2 rounded-2xl text-[#28EEEDEE] border-[#28EEEDEE] text-base">
+              INTEGRAÇÃO
+            </button>
           </div>
         </div>
         <div className="w-[450] h-[325]">
