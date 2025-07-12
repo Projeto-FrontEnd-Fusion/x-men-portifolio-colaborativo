@@ -23,10 +23,10 @@ function Impact() {
 
   return (
     <section className="text-white  w-full py-12 bg-[#022440] ">
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto max-w-7xl px-4">
+      <ul className="grid grid-cols-1 semi:grid-cols-2 custom:grid-cols-3 gap-6 mx-auto max-w-7xl px-4">
         {impacts.map((impact, index) => (
           <li key={index}>
-            <article className="sm:bg-[#2b3a4f] bg-transparent p-6 rounded-2xl transition duration-300 text-left  flex flex-col items-start sm:items-center">              
+            <article className="min-w-[250px] w-full sm:bg-[#2b3a4f] bg-transparent p-6 rounded-2xl transition duration-300 text-left flex flex-col items-start sm:items-center">
               <img
                 src={Trofeu}
                 className="w-6 mb-2 sm:hidden"
@@ -39,7 +39,9 @@ function Impact() {
               <h3 className="text-3xl font-medium mb-2 block sm:hidden">
                 {impact.title}
               </h3>
-              <p className="text-gray-300  justify-start">{impact.description}</p>
+              <p className="text-gray-300  justify-start">
+                {impact.description}
+              </p>
             </article>
           </li>
         ))}
