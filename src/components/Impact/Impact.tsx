@@ -23,9 +23,12 @@ function Impact() {
 
   return (
     <section className="text-white  w-full py-12 bg-[#022440] ">
-      <ul className="grid grid-cols-1 semi:grid-cols-2 custom:grid-cols-3 gap-6 mx-auto max-w-7xl px-4">
+      <ul className="flex flex-col semi:flex-row semi:flex-wrap custom:flex-nowrap gap-6 mx-auto max-w-7xl px-4">
         {impacts.map((impact, index) => (
-          <li key={index}>
+          <li
+            key={index}
+            className="min-w-[250px] w-full semi:w-[calc(50%-0.75rem)] custom:w-[calc(33.333%-1rem)]"
+          >
             <article className="min-w-[250px] w-full sm:bg-[#2b3a4f] bg-transparent p-6 rounded-2xl transition duration-300 text-left flex flex-col items-start sm:items-center">
               <img
                 src={Trofeu}
