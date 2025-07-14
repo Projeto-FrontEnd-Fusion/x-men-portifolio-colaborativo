@@ -8,6 +8,8 @@ export default {
     extend: {
       screens: {
         'xxl': '1920px', // Adiciona um novo breakpoint para telas de 1920px
+        custom: "1110px",
+        semi: "759px",
       },
     },
   },
