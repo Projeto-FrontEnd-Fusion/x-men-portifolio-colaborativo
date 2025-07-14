@@ -1,5 +1,5 @@
 import Impact from "../components/Impact/Impact";
-import Hero from "../components/hero/Hero";
+import Hero from "../components/hero/hero";
 import { NextLevel } from "../components/nextLevel/nextLevel";
 
 export default function App() {
