@@ -7,7 +7,7 @@ export const Community = () => {
       <div className="flex flex-col lg:flex-row">
         <div className="flex flex-col ">
           <div className="flex flex-col items-center text-center lg:text-left lg:items-start gap-6 lg:gap-8 lg:px-8 w-full lg:w-auto ">
-            <h1 className="text-start text-white lg:text-5xl px-4 lg:w-[560px]">
+            <h1 className="text-start text-white lg:text-5xl lg:w-[560px]">
               Acreditamos que aprender programação deve ser divertido e
               envolvente.
             </h1>
