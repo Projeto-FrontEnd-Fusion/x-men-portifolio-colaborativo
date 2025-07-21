@@ -42,7 +42,7 @@ function Impact() {
               <h3 className="text-3xl font-medium mb-2 block custom:hidden">
                 {impact.title}
               </h3>
-              <p className="text-gray-300 justify-start">
+              <p className="text-gray-300 text-sm justify-start ">
                 {impact.description}
               </p>
             </article>
