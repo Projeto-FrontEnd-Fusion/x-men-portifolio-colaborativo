@@ -5,7 +5,7 @@ import "../../../index.css";
 
 import Tech from "../../../assets/Tech.png";
 import Explorar from "../../../assets/Explorar.png";
-import Subtitle from '../../../assets/subtitle.png'
+import Subtitle from "../../../assets/subtitle.png";
 import ButtonPrimary from "../buttons/buttonPrimary";
 import SecondaryButton from "../buttons/secondaryButton";
 import Modal from "../modal/RegisterModal";
@@ -15,7 +15,6 @@ const Hero = () => {
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-
 
   return (
     <>
@@ -41,12 +40,13 @@ const Hero = () => {
             Sua jornada pelo desenvolvimento <br /> web começa aqui.
           </h1>
 
-          <section className="flex flex-col lg:flex-row items-center lg:justify-between w-auto space-y-8 lg:space-y-8 lg:space-x-96">
+          <section className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 md:gap-12 lg:gap-16 xl:gap-24 ">
             <SecondaryButton onClick={openModal}>Faça Parte</SecondaryButton>
+
             <img
               src={Subtitle}
               alt="Logotipo"
-              className="object-contain"
+              className="object-contain max-w-[220px] lg:max-w-xs"
               style={{
                 fontSize: "20px",
                 fontWeight: 400,
